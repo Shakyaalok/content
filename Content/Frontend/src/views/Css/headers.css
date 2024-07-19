@@ -1,0 +1,81 @@
+.bg-body-teal {
+    background-color: rgb(1, 76, 76);
+    width: 100%;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+   
+}
+.logo{
+    width: 10rem;
+    height:fit-content;
+}
+
+.navbar-collapse{
+    gap: 2rem;
+    justify-content: end;
+}
+
+.navbar-nav{
+    display: flex;
+    gap: 1rem;
+}
+
+
+.nav-link{
+    position: relative;
+    color: white;
+    font-weight: 500;
+}
+
+.nav-link:hover::after{
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: rgb(255,87,34);
+    margin: 0 auto;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    animation: movingline 0.2s linear;
+}
+
+.navbar-toggler-icon{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 600;
+}
+
+
+@keyframes movingline {
+    0%{
+        width: 0%;
+    }25%{
+        width: 25%;
+    }50%{
+        width: 50%;
+    }75%{
+        width: 75%;
+    }100%{
+        width: 100%;
+    }
+}
+
+
+.nav-item a:hover{
+    color: rgb(224, 215, 215);
+    font-weight: 500;
+}
+   
+
+
+
+
+
